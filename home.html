@@ -27,7 +27,7 @@
         <nav class="page-header__nav">
           <ul class="page-header__nav-list">
             <li>
-              <a href="">Home</a>
+              <a href="" class="active">Home</a>
             </li>
             <li>
               <a href="">Swap</a>
@@ -41,12 +41,53 @@
           </ul>
         </nav>
         <div class="page-header__btns">
-          <button type="button" class="page-header__user">
+          <button type="menu" class="page-header__user-button">
             0xb62 ... f38dM
             <img src="img/header-user.png" alt="user avatar">
           </button>
+          <div class="page-header__user">
+            <span class="page-header__user-wallet">Connected with Metamask</span>
+            <span class="page-header__user-address">
+              <img src="img/header-user.png" alt="">
+              0xb62 ... f38dM
+            </span>
+            <div class="page-header__user-actions">
+              <button type="button" class="page-header__copy-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.3332 10.75V14.25C13.3332 17.1667 12.1665 18.3333 9.24984 18.3333H5.74984C2.83317 18.3333 1.6665 17.1667 1.6665 14.25V10.75C1.6665 7.83332 2.83317 6.66666 5.74984 6.66666H9.24984C12.1665 6.66666 13.3332 7.83332 13.3332 10.75Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M18.3332 5.74999V9.24999C18.3332 12.1667 17.1665 13.3333 14.2498 13.3333H13.3332V10.75C13.3332 7.83332 12.1665 6.66666 9.24984 6.66666H6.6665V5.74999C6.6665 2.83332 7.83317 1.66666 10.7498 1.66666H14.2498C17.1665 1.66666 18.3332 2.83332 18.3332 5.74999Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Copy address
+                <span class="copied-tip">Copied</span>
+              </button>
+              <button type="button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.4" d="M6.66667 8.33333L5 9.99999L6.66667 11.6667" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M13.3335 8.33333L15.0002 9.99999L13.3335 11.6667" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 10C18.3332 5.39763 14.6022 1.66667 9.99984 1.66667C5.39746 1.66667 1.6665 5.39763 1.6665 10C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M10.8332 8.05832L9.1665 11.9417" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                View on Explorer
+              </button>
+              <button type="button" class="page-header__change-wallet">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3332 9.16667V7.5C18.3332 3.33334 16.6665 1.66667 12.4998 1.66667H7.49984C3.33317 1.66667 1.6665 3.33334 1.6665 7.5V12.5C1.6665 16.6667 3.33317 18.3333 7.49984 18.3333H8.33317" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g opacity="0.4">
+                  <path d="M1.69092 7.08333H18.3326" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.69092 12.9167H9.99923" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.09131 18.3248V1.6748" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.9248 9.99145V1.6748" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <path d="M15.6083 12.2251L12.15 15.6833C12.0167 15.8166 11.8917 16.075 11.8583 16.2584L11.6667 17.5833C11.6 18.0583 11.9334 18.4 12.4084 18.325L13.7333 18.1334C13.9167 18.1084 14.175 17.9751 14.3083 17.8417L17.7667 14.3834C18.3584 13.7917 18.6417 13.0917 17.7667 12.2167C16.9 11.3501 16.2083 11.6251 15.6083 12.2251Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.1167 12.7167C15.4084 13.7667 16.2333 14.5833 17.2833 14.8833" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Change wallet
+              </button>
+            </div>
+          </div>
           <button type="button" class="page-header__connect">Connect wallet</button>
         </div>
+        <button type="menu" class="page-header__menu-btn"></button>
       </div>
     </header>
     <!-- page header end -->
@@ -70,7 +111,7 @@
     <!-- about -->
     <div class="about">
       <div class="about-item about-item--red">
-        <h2>Let us talk about the project</h2>
+        <h2>Let us <br> talk about <br> the project</h2>
         <ul>
           <li>1 Quadrillion Total Supply</li>
           <li>Tax 0%</li>
@@ -114,61 +155,57 @@
     <div class="red-block">
       <!-- partners -->
       <ul class="partners">
-        <li><img src="img/partners/gate.svg" alt=""></li>
-        <li><img src="img/partners/mexc.svg" alt=""></li>
-        <li><img src="img/partners/xt.svg" alt=""></li>
-        <li><img src="img/partners/lbank.svg" alt=""></li>
-        <li><img src="img/partners/bitjet.svg" alt=""></li>
-        <li><img src="img/partners/bitmart.svg" alt=""></li>
-        <li><img src="img/partners/bitrue.svg" alt=""></li>
-        <li><img src="img/partners/bitkan.svg" alt=""></li>
-        <li><img src="img/partners/ztglobal.svg" alt=""></li>
-        <li><img src="img/partners/hotbit.svg" alt=""></li>
+        <li><img src="img/partners/gate.svg" ></li>
+        <li><img src="img/partners/mexc.svg" ></li>
+        <li><img src="img/partners/xt.svg"></li>
+        <li><img src="img/partners/lbank.svg"></li>
+        <li><img src="img/partners/bitjet.svg"></li>
+        <li><img src="img/partners/bitmart.svg"></li>
+        <li><img src="img/partners/bitrue.svg"></li>
+        <li><img src="img/partners/bitkan.svg"></li>
+        <li><img src="img/partners/ztglobal.svg"></li>
+        <li><img src="img/partners/hotbit.svg"></li>
       </ul>
       <!-- partners end -->
 
       <!-- roadmap -->
       <section class="roadmap">
         <h2 class="roadmap__title">Our roadmap</h2>
-        <div class="roadmap__wrapper">
-          <ul class="roadmap__list">
-            <li class="roadmap__item roadmap__item--black">
-              <span class="roadmap__item-date roadmap__item-date--white">Q3 2022 - Q1 2023</span>
-              <h3 class="roadmap__item-title roadmap__item-title--white">Research & Development</h3>
-              <p class="roadmap__item-description roadmap__item-description--white">Research on decentralized exchange technology and the current state of the market. Develop technical infrastructure like smart contract and blockchain integration.</p>
-            </li>
-            <li class="roadmap__item roadmap__item--steps roadmap__item--white">
-              <img src="img/roadmap-steps.svg">
-              <span class="roadmap__item-date roadmap__item-date--black">Q2 2023 - Q3 2023</span>
-              <h3 class="roadmap__item-title roadmap__item-title--red">Alpha <br> Testing</h3>
-              <p class="roadmap__item-description">Invite a small group of users to evaluate the platform in a closed alpha environment. Feedback from these users will be implemented and assessed to make improvements and fix any bugs before the platform goes live.</p>
-            </li>
-            <li class="roadmap__item roadmap__item--shadow">
-              <span class="roadmap__item-date roadmap__item-date--white">Q3 2023 - Q4 2023</span>
-              <h3 class="roadmap__item-title roadmap__item-title--white">Beta <br> Testing</h3>
-              <p class="roadmap__item-description roadmap__item-description--white">Open the platform to a larger group of beta testers to further test and refine the platform. Onboard more tokens and trading pairs to the platform.</p>
-            </li>
-          </ul>
-          <ul class="roadmap__list">
-            <li class="roadmap__item roadmap__item--paw roadmap__item--white">
-              <img src="img/roadmap-paw.png">
-              <span class="roadmap__item-date roadmap__item-date--red">Q1 2023</span>
-              <h3 class="roadmap__item-title roadmap__item-title--black">Token <br> Launch</h3>
-              <p class="roadmap__item-description roadmap__item-description--black">Stealth launch of $PAW on the Ethereum network. Develop the core foundation for the future of Pawswap ($PAW).</p>
-            </li>
-            <li class="roadmap__item roadmap__item--white-border">
-              <span class="roadmap__item-date roadmap__item-date--black">Q2 2023 - Q3 2023</span>
-              <h3 class="roadmap__item-title">Community-<br>Driven <br> Governance</h3>
-              <p class="roadmap__item-description roadmap__item-description--white">Introduce a community-driven governance model that will allow users to assist in the development and direction of the platform.</p>
-            </li>
-            <li class="roadmap__item roadmap__item--black roadmap__item--munch roadmap__item--shadow">
-              <img src="img/roadmap-munch.png">
-              <span class="roadmap__item-date roadmap__item-date--white">Q4 2023 - Q1 2024</span>
-              <h3 class="roadmap__item-title">Public <br> Launch</h3>
-              <p class="roadmap__item-description roadmap__item-description--white">Pawswap officially launches to the public. Continue to add new tokens and trading pairs and actively improve the platform based on user feedback</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="roadmap__list">
+          <li class="roadmap__item roadmap__item--black">
+            <span class="roadmap__item-date roadmap__item-date--white">Q3 2022 - Q1 2023</span>
+            <h3 class="roadmap__item-title roadmap__item-title--white">Research & Development</h3>
+            <p class="roadmap__item-description roadmap__item-description--white">Research on decentralized exchange technology and the current state of the market. Develop technical infrastructure like smart contract and blockchain integration.</p>
+          </li>
+          <li class="roadmap__item roadmap__item--paw roadmap__item--white">
+            <img src="img/roadmap-paw.png">
+            <span class="roadmap__item-date roadmap__item-date--red">Q1 2023</span>
+            <h3 class="roadmap__item-title roadmap__item-title--black">Token <br> Launch</h3>
+            <p class="roadmap__item-description roadmap__item-description--black">Stealth launch of $PAW on the Ethereum network. Develop the core foundation for the future of Pawswap ($PAW).</p>
+          </li>
+          <li class="roadmap__item roadmap__item--steps roadmap__item--white">
+            <img src="img/roadmap-steps.svg">
+            <span class="roadmap__item-date roadmap__item-date--black">Q2 2023 - Q3 2023</span>
+            <h3 class="roadmap__item-title roadmap__item-title--red">Alpha <br> Testing</h3>
+            <p class="roadmap__item-description">Invite a small group of users to evaluate the platform in a closed alpha environment. Feedback from these users will be implemented and assessed to make improvements and fix any bugs before the platform goes live.</p>
+          </li>
+          <li class="roadmap__item roadmap__item--white-border">
+            <span class="roadmap__item-date roadmap__item-date--black">Q2 2023 - Q3 2023</span>
+            <h3 class="roadmap__item-title">Community-<br>Driven <br> Governance</h3>
+            <p class="roadmap__item-description roadmap__item-description--white">Introduce a community-driven governance model that will allow users to assist in the development and direction of the platform.</p>
+          </li>
+          <li class="roadmap__item roadmap__item--shadow">
+            <span class="roadmap__item-date roadmap__item-date--white">Q3 2023 - Q4 2023</span>
+            <h3 class="roadmap__item-title roadmap__item-title--white">Beta <br> Testing</h3>
+            <p class="roadmap__item-description roadmap__item-description--white">Open the platform to a larger group of beta testers to further test and refine the platform. Onboard more tokens and trading pairs to the platform.</p>
+          </li>
+          <li class="roadmap__item roadmap__item--black roadmap__item--munch roadmap__item--shadow">
+            <img src="img/roadmap-munch.png">
+            <span class="roadmap__item-date roadmap__item-date--white">Q4 2023 - Q1 2024</span>
+            <h3 class="roadmap__item-title">Public <br> Launch</h3>
+            <p class="roadmap__item-description roadmap__item-description--white">Pawswap officially launches to the public. Continue to add new tokens and trading pairs and actively improve the platform based on user feedback</p>
+          </li>
+        </ul>
       </section>
       <!-- roadmap end -->
 
@@ -179,11 +216,11 @@
             <img src="img/logo.svg">
           </a>
           <div class="page-footer__buttons">
-            <button class="page-footer__button">
+            <button class="page-footer__button" disabled>
               <img src="img/logo-min.svg">
               0.00000007898
             </button>
-            <button class="page-footer__button">
+            <button class="page-footer__button" disabled>
               <span>TVL</span>
               $75.00
             </button>
@@ -207,5 +244,53 @@
     </div>
     <!-- red block end -->
   </div>
+
+  <!-- modal window -->
+  <div class="modal-window">
+    <div class="modal-window__wrapper">
+      <button class="modal-window__close" type="button"></button>
+      <img src="img/logo.svg" class="connect-wallet__logo">
+      <h4 class="connect-wallet__title">Connect wallet</h4>
+      <ul class="connect-wallet__list">
+        <li class="connect-wallet__item">
+          <button class="connect-wallet__wallet-button" type="button">
+            <img src="img/wallets/metamask.png" alt="">
+            MetaMask
+          </button>
+        </li>
+        <li class="connect-wallet__item">
+          <button class="connect-wallet__wallet-button" type="button">
+            <img src="img/wallets/connect.png" alt="">
+            WalletConnect
+          </button>
+        </li>
+        <li class="connect-wallet__item">
+          <button class="connect-wallet__wallet-button" type="button">
+            <img src="img/wallets/coinbase.png" alt="">
+            Coinbase Wallet
+          </button>
+        </li>
+        <li class="connect-wallet__item">
+          <button class="connect-wallet__wallet-button" type="button">
+            <img src="img/wallets/fortmatic.png" alt="">
+            Fortmatic
+          </button>
+        </li>
+        <li class="connect-wallet__item">
+          <button class="connect-wallet__wallet-button" type="button">
+            <img src="img/wallets/portis.png" alt="">
+            Portis
+          </button>
+        </li>
+      </ul>
+      <footer class="connect-wallet__footer">
+        <span>New to Ethereum?</span>
+        <a href="">Learn more about wallet</a>
+      </footer>
+    </div>
+  </div>
+  <!-- modal window end -->
+
+  <script src="js/home.js"></script>
 </body>
 </html>
