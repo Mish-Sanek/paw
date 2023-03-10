@@ -1,10 +1,8 @@
-const pageHeader = document.querySelector('.page-header');
 const pageHeaderConnect = pageHeader.querySelector('.page-header__connect');
 const pageHeaderUserMenuButtons = pageHeader.querySelector('.page-header__user-actions button');
 const pageHeaderUserButton = pageHeader.querySelector('.page-header__user-button');
 const copyAddressButton = pageHeader.querySelector('.page-header__copy-button');
 const changeWalletButton = pageHeader.querySelector('.page-header__change-wallet');
-const pageHeaderMenuButton = pageHeader.querySelector('.page-header__menu-btn');
 const modalWindow = document.querySelector('.modal-window');
 const modalWindowClose = modalWindow.querySelector('.modal-window__close');
 const walletButtons = modalWindow.querySelectorAll('.connect-wallet__wallet-button');
@@ -33,11 +31,6 @@ pageHeaderUserButton.addEventListener('click', () => {
       console.log(e.currentTarget);
     }
   })
-});
-
-pageHeaderMenuButton.addEventListener('click', () => {
-  pageHeader.classList.toggle('opened');
-  pageHeaderMenuButton.classList.toggle('active');
 });
 
 copyAddressButton.addEventListener('click', () => {

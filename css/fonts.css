@@ -12,6 +12,12 @@
        url('fonts/BasierCircle-Medium.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Basier Circle Semibold';
+  src: url('fonts/BasierCircle-SemiBold.woff2') format('woff2'),
+       url('fonts/BasierCircle-SemiBold.woff') format('woff');
+}
+
 
 /* GT Walsheim Pro */
 

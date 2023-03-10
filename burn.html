@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/burn.css">
+  <title>Pawswap</title>
+</head>
+<body>
+  <div class="app app--burn">
+    <!-- page header -->
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a href="" class="page-header__logo">
+          <img src="img/logo.svg" alt="Pawswap logo">
+        </a>
+        <nav class="page-header__nav">
+          <ul class="page-header__nav-list">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Swap</a>
+            </li>
+            <li>
+              <a href="">Approvals</a>
+            </li>
+            <li>
+              <a href="" class="active">Burn</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__btns">
+          <button type="menu" class="page-header__user-button">
+            0xb62 ... f38dM
+            <img src="img/header-user.png" alt="user avatar">
+          </button>
+          <div class="page-header__user">
+            <span class="page-header__user-wallet">Connected with Metamask</span>
+            <span class="page-header__user-address">
+              <img src="img/header-user.png" alt="">
+              0xb62 ... f38dM
+            </span>
+            <div class="page-header__user-actions">
+              <button type="button" class="page-header__copy-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.3332 10.75V14.25C13.3332 17.1667 12.1665 18.3333 9.24984 18.3333H5.74984C2.83317 18.3333 1.6665 17.1667 1.6665 14.25V10.75C1.6665 7.83332 2.83317 6.66666 5.74984 6.66666H9.24984C12.1665 6.66666 13.3332 7.83332 13.3332 10.75Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M18.3332 5.74999V9.24999C18.3332 12.1667 17.1665 13.3333 14.2498 13.3333H13.3332V10.75C13.3332 7.83332 12.1665 6.66666 9.24984 6.66666H6.6665V5.74999C6.6665 2.83332 7.83317 1.66666 10.7498 1.66666H14.2498C17.1665 1.66666 18.3332 2.83332 18.3332 5.74999Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Copy address
+                <span class="copied-tip">Copied</span>
+              </button>
+              <button type="button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.4" d="M6.66667 8.33333L5 9.99999L6.66667 11.6667" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M13.3335 8.33333L15.0002 9.99999L13.3335 11.6667" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 10C18.3332 5.39763 14.6022 1.66667 9.99984 1.66667C5.39746 1.66667 1.6665 5.39763 1.6665 10C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M10.8332 8.05832L9.1665 11.9417" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                View on Explorer
+              </button>
+              <button type="button" class="page-header__change-wallet">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3332 9.16667V7.5C18.3332 3.33334 16.6665 1.66667 12.4998 1.66667H7.49984C3.33317 1.66667 1.6665 3.33334 1.6665 7.5V12.5C1.6665 16.6667 3.33317 18.3333 7.49984 18.3333H8.33317" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g opacity="0.4">
+                  <path d="M1.69092 7.08333H18.3326" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.69092 12.9167H9.99923" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.09131 18.3248V1.6748" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.9248 9.99145V1.6748" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <path d="M15.6083 12.2251L12.15 15.6833C12.0167 15.8166 11.8917 16.075 11.8583 16.2584L11.6667 17.5833C11.6 18.0583 11.9334 18.4 12.4084 18.325L13.7333 18.1334C13.9167 18.1084 14.175 17.9751 14.3083 17.8417L17.7667 14.3834C18.3584 13.7917 18.6417 13.0917 17.7667 12.2167C16.9 11.3501 16.2083 11.6251 15.6083 12.2251Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.1167 12.7167C15.4084 13.7667 16.2333 14.5833 17.2833 14.8833" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Change wallet
+              </button>
+            </div>
+          </div>
+          <button type="button" class="page-header__connect">Connect wallet</button>
+        </div>
+        <button type="menu" class="page-header__menu-btn"></button>
+      </div>
+    </header>
+    <!-- page header end -->
+
+    <main class="information">
+      <!-- burn-button -->
+      <button class="burn-button">🔥 Burn $PAW</button>
+      <!-- burn-button -->
+
+      <!-- info header -->
+      <header class="information__header">
+        <h1 class="information__header-title">Puw information</h1>
+        <ul class="information__header-list">
+          <li class="information__header-item">
+            <span>PRICE</span>
+            0.00000007898
+          </li>
+          <li class="information__header-item">
+            <span>M.CAP</span>
+            $88,661,754
+          </li>
+        </ul>
+      </header>
+      <!-- info header end -->
+
+      <!-- info prices -->
+      <ul class="information__prices">
+        <li class="information__prices-item">
+          <p class="information__prices-item-left">
+            <span class="information__prices-coin-name">
+              <img src="img/coins/eth.png">
+              PAWSWAP / USDT
+            </span>
+            <b class="information__prices-coin-percent">24.04%</b>
+          </p>
+          <p class="information__prices-item-right">
+            <span class="information__prices-cost">0.0000000001</span>
+            <span class="information__prices-grow">0.0000000062</span>
+          </p>
+        </li>
+        <li class="information__prices-item">
+          <p class="information__prices-item-left">
+            <span class="information__prices-coin-name">
+              <img src="img/coins/usdt.png">
+              BONE SHIBA / USDT
+            </span>
+            <b class="information__prices-coin-percent information__prices-coin-percent--down">0.087%</b>
+          </p>
+          <p class="information__prices-item-right">
+            <span class="information__prices-cost">1.5450</span>
+            <span class="information__prices-grow information__prices-grow--down">030135</span>
+          </p>
+        </li>
+        <li class="information__prices-item">
+          <p class="information__prices-item-left">
+            <span class="information__prices-coin-name">
+              <img src="img/coins/xrp.png">
+              SHIB / USDT
+            </span>
+            <b class="information__prices-coin-percent information__prices-coin-percent--up">10.93%</b>
+          </p>
+          <p class="information__prices-item-right">
+            <span class="information__prices-cost">0.000000010</span>
+            <span class="information__prices-grow information__prices-grow--up">0.000000010</span>
+          </p>
+        </li>
+      </ul>
+      <!-- info prices end -->
+
+      <!-- info wrapper -->
+      <div class="information__wrapper">
+        <!-- info supply -->
+        <section class="information__supply">
+          <h2 class="information__wrapper-title">PawSwap Supply</h2>
+          <ul class="information__supply-list">
+            <li class="information__supply-item">
+              <b>27,407,234,934</b>
+              <p>Total burnt</p>
+            </li>
+            <li class="information__supply-item">
+              <b>68,108,892</b>
+              <p>Total Market Cap</p>
+            </li>
+            <li class="information__supply-item">
+              <b>1,000,000,000,000,000</b>
+              <p>Max Total Supply</p>
+            </li>
+            <li class="information__supply-item">
+              <b>999,972,592,765,066</b>
+              <p>Total Supply</p>
+            </li>
+            <li class="information__supply-item">
+              <b>999,972,592,765,066</b>
+              <p>Circulating Supply</p>
+            </li>
+            <li class="information__supply-item">
+              <b>0.0027407234934393363%</b>
+              <p>Total burnt percentage</p>
+            </li>
+          </ul>
+          <div class="information__supply-graph">
+            <header class="information__supply-graph-header">
+              <img src="img/coins/usdt.png">
+              <p class="information__supply-graph-pair">
+                <b>PAWUSDT</b>
+                <span>PAWSWAP / USDT</span>
+              </p>
+            </header>
+            <b class="information__supply-graph-price">65.20700652</b>
+            <svg class="information__supply-graph-view" width="342" height="133" viewBox="0 0 342 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 94.5L28.5405 72.5L57.5832 65L85.1237 75.5L114.667 70.5L142.708 25L170.75 5L199.292 23.5L255.875 3L283.415 15L315.963 20L341 1" stroke="#26A17B" stroke-width="2.5"/>
+              <path d="M2.20117 130V121.598H3.4375L6.26758 126.725H6.31445L9.15039 121.598H10.3574V130H9.36133V123.268H9.31445L6.33789 128.559H6.2207L3.24414 123.232H3.19727V130H2.20117ZM14.2949 130.105C13.6543 130.105 13.1387 129.926 12.748 129.566C12.3535 129.211 12.1562 128.76 12.1562 128.213C12.1562 127.65 12.3691 127.189 12.7949 126.83C13.2207 126.471 13.8535 126.291 14.6934 126.291C15.1934 126.291 15.6973 126.363 16.2051 126.508V125.898C16.2051 125.535 16.0879 125.23 15.8535 124.984C15.6113 124.742 15.2559 124.621 14.7871 124.621C14.3574 124.621 14.0254 124.727 13.791 124.938C13.5605 125.145 13.4395 125.404 13.4277 125.717H12.4609C12.4609 125.123 12.6797 124.65 13.1172 124.299C13.5547 123.939 14.1113 123.76 14.7871 123.76C15.5488 123.76 16.1406 123.959 16.5625 124.357C16.9805 124.752 17.1895 125.256 17.1895 125.869V130H16.334L16.2637 129.139H16.2168C15.834 129.783 15.1934 130.105 14.2949 130.105ZM14.4766 129.268C14.9883 129.268 15.4043 129.107 15.7246 128.787C16.0449 128.467 16.2051 128.078 16.2051 127.621V127.311C15.7441 127.166 15.2402 127.094 14.6934 127.094C13.6816 127.094 13.1758 127.463 13.1758 128.201C13.1758 128.521 13.2891 128.777 13.5156 128.969C13.7266 129.168 14.0469 129.268 14.4766 129.268ZM19.2227 130V123.865H20.1016L20.1836 124.902H20.2305C20.3633 124.559 20.5723 124.285 20.8574 124.082C21.1426 123.891 21.4746 123.795 21.8535 123.795H22.4043V124.768H21.9238C20.7949 124.768 20.2305 125.52 20.2305 127.023V130H19.2227Z" fill="#78797A"/>
+              <path d="M64.2012 130V121.598H65.4375L68.2676 126.725H68.3145L71.1504 121.598H72.3574V130H71.3613V123.268H71.3145L68.3379 128.559H68.2207L65.2441 123.232H65.1973V130H64.2012ZM76.2949 130.105C75.6543 130.105 75.1387 129.926 74.748 129.566C74.3535 129.211 74.1562 128.76 74.1562 128.213C74.1562 127.65 74.3691 127.189 74.7949 126.83C75.2207 126.471 75.8535 126.291 76.6934 126.291C77.1934 126.291 77.6973 126.363 78.2051 126.508V125.898C78.2051 125.535 78.0879 125.23 77.8535 124.984C77.6113 124.742 77.2559 124.621 76.7871 124.621C76.3574 124.621 76.0254 124.727 75.791 124.938C75.5605 125.145 75.4395 125.404 75.4277 125.717H74.4609C74.4609 125.123 74.6797 124.65 75.1172 124.299C75.5547 123.939 76.1113 123.76 76.7871 123.76C77.5488 123.76 78.1406 123.959 78.5625 124.357C78.9805 124.752 79.1895 125.256 79.1895 125.869V130H78.334L78.2637 129.139H78.2168C77.834 129.783 77.1934 130.105 76.2949 130.105ZM76.4766 129.268C76.9883 129.268 77.4043 129.107 77.7246 128.787C78.0449 128.467 78.2051 128.078 78.2051 127.621V127.311C77.7441 127.166 77.2402 127.094 76.6934 127.094C75.6816 127.094 75.1758 127.463 75.1758 128.201C75.1758 128.521 75.2891 128.777 75.5156 128.969C75.7266 129.168 76.0469 129.268 76.4766 129.268ZM81.2227 130V123.865H82.1016L82.1836 124.902H82.2305C82.3633 124.559 82.5723 124.285 82.8574 124.082C83.1426 123.891 83.4746 123.795 83.8535 123.795H84.4043V124.768H83.9238C82.7949 124.768 82.2305 125.52 82.2305 127.023V130H81.2227ZM93.4336 125.57C94.3867 125.93 94.8633 126.635 94.8633 127.686C94.8633 128.439 94.6113 129.027 94.1074 129.449C93.6113 129.875 92.918 130.094 92.0273 130.105C91.1406 130.094 90.4492 129.875 89.9531 129.449C89.4492 129.027 89.1973 128.439 89.1973 127.686C89.1973 126.635 89.6738 125.93 90.627 125.57V125.523C89.8418 125.176 89.4492 124.561 89.4492 123.678C89.4492 122.99 89.6816 122.449 90.1465 122.055C90.5918 121.668 91.2188 121.469 92.0273 121.457C92.8398 121.469 93.4727 121.668 93.9258 122.055C94.3828 122.453 94.6113 122.994 94.6113 123.678C94.6113 124.561 94.2188 125.176 93.4336 125.523V125.57ZM90.8789 122.729C90.6133 122.982 90.4805 123.314 90.4805 123.725C90.4805 124.135 90.6172 124.471 90.8906 124.732C91.1523 124.994 91.5312 125.131 92.0273 125.143C92.5234 125.131 92.9082 124.994 93.1816 124.732C93.4473 124.467 93.5801 124.131 93.5801 123.725C93.5801 123.314 93.4473 122.982 93.1816 122.729C92.9238 122.482 92.5391 122.354 92.0273 122.342C91.5195 122.354 91.1367 122.482 90.8789 122.729ZM92.0273 129.221C92.6289 129.209 93.0781 129.061 93.375 128.775C93.6719 128.49 93.8203 128.102 93.8203 127.609C93.8203 127.141 93.6758 126.762 93.3867 126.473C93.0898 126.188 92.6367 126.039 92.0273 126.027C91.418 126.039 90.9707 126.188 90.6855 126.473C90.3887 126.758 90.2402 127.137 90.2402 127.609C90.2402 128.102 90.3887 128.49 90.6855 128.775C90.9824 129.061 91.4297 129.209 92.0273 129.221Z" fill="#78797A"/>
+              <path d="M137.201 130V121.598H138.438L141.268 126.725H141.314L144.15 121.598H145.357V130H144.361V123.268H144.314L141.338 128.559H141.221L138.244 123.232H138.197V130H137.201ZM149.295 130.105C148.654 130.105 148.139 129.926 147.748 129.566C147.354 129.211 147.156 128.76 147.156 128.213C147.156 127.65 147.369 127.189 147.795 126.83C148.221 126.471 148.854 126.291 149.693 126.291C150.193 126.291 150.697 126.363 151.205 126.508V125.898C151.205 125.535 151.088 125.23 150.854 124.984C150.611 124.742 150.256 124.621 149.787 124.621C149.357 124.621 149.025 124.727 148.791 124.938C148.561 125.145 148.439 125.404 148.428 125.717H147.461C147.461 125.123 147.68 124.65 148.117 124.299C148.555 123.939 149.111 123.76 149.787 123.76C150.549 123.76 151.141 123.959 151.562 124.357C151.98 124.752 152.189 125.256 152.189 125.869V130H151.334L151.264 129.139H151.217C150.834 129.783 150.193 130.105 149.295 130.105ZM149.477 129.268C149.988 129.268 150.404 129.107 150.725 128.787C151.045 128.467 151.205 128.078 151.205 127.621V127.311C150.744 127.166 150.24 127.094 149.693 127.094C148.682 127.094 148.176 127.463 148.176 128.201C148.176 128.521 148.289 128.777 148.516 128.969C148.727 129.168 149.047 129.268 149.477 129.268ZM154.223 130V123.865H155.102L155.184 124.902H155.23C155.363 124.559 155.572 124.285 155.857 124.082C156.143 123.891 156.475 123.795 156.854 123.795H157.404V124.768H156.924C155.795 124.768 155.23 125.52 155.23 127.023V130H154.223ZM164.178 130V122.74H164.131L162.197 124.252H162.08V123.221L164.166 121.598H165.197V130H164.178ZM170.066 130.105C169.227 130.105 168.555 129.871 168.051 129.402C167.547 128.934 167.295 128.34 167.295 127.621H168.314C168.314 128.066 168.471 128.439 168.783 128.74C169.1 129.045 169.527 129.197 170.066 129.197C170.68 129.197 171.129 129.025 171.414 128.682C171.691 128.334 171.83 127.869 171.83 127.287C171.83 126.729 171.688 126.277 171.402 125.934C171.105 125.59 170.664 125.418 170.078 125.418C169.422 125.418 168.895 125.693 168.496 126.244H167.441L167.764 121.598H172.469V122.523H168.654L168.461 125.201H168.508C168.93 124.744 169.506 124.516 170.236 124.516C171.057 124.516 171.701 124.768 172.17 125.271C172.631 125.779 172.861 126.439 172.861 127.252C172.861 128.119 172.627 128.811 172.158 129.326C171.674 129.846 170.977 130.105 170.066 130.105Z" fill="#78797A"/>
+              <path d="M215.201 130V121.598H216.438L219.268 126.725H219.314L222.15 121.598H223.357V130H222.361V123.268H222.314L219.338 128.559H219.221L216.244 123.232H216.197V130H215.201ZM227.295 130.105C226.654 130.105 226.139 129.926 225.748 129.566C225.354 129.211 225.156 128.76 225.156 128.213C225.156 127.65 225.369 127.189 225.795 126.83C226.221 126.471 226.854 126.291 227.693 126.291C228.193 126.291 228.697 126.363 229.205 126.508V125.898C229.205 125.535 229.088 125.23 228.854 124.984C228.611 124.742 228.256 124.621 227.787 124.621C227.357 124.621 227.025 124.727 226.791 124.938C226.561 125.145 226.439 125.404 226.428 125.717H225.461C225.461 125.123 225.68 124.65 226.117 124.299C226.555 123.939 227.111 123.76 227.787 123.76C228.549 123.76 229.141 123.959 229.562 124.357C229.98 124.752 230.189 125.256 230.189 125.869V130H229.334L229.264 129.139H229.217C228.834 129.783 228.193 130.105 227.295 130.105ZM227.477 129.268C227.988 129.268 228.404 129.107 228.725 128.787C229.045 128.467 229.205 128.078 229.205 127.621V127.311C228.744 127.166 228.24 127.094 227.693 127.094C226.682 127.094 226.176 127.463 226.176 128.201C226.176 128.521 226.289 128.777 226.516 128.969C226.727 129.168 227.047 129.268 227.477 129.268ZM232.223 130V123.865H233.102L233.184 124.902H233.23C233.363 124.559 233.572 124.285 233.857 124.082C234.143 123.891 234.475 123.795 234.854 123.795H235.404V124.768H234.924C233.795 124.768 233.23 125.52 233.23 127.023V130H232.223ZM240.221 130V129.209L243.092 125.857C243.518 125.354 243.758 125.066 243.812 124.996C243.938 124.836 244.049 124.645 244.146 124.422C244.24 124.219 244.287 123.998 244.287 123.76C244.287 123.334 244.16 122.994 243.906 122.74C243.656 122.49 243.283 122.365 242.787 122.365C242.295 122.365 241.912 122.502 241.639 122.775C241.357 123.057 241.217 123.449 241.217 123.953H240.197C240.197 123.211 240.43 122.607 240.895 122.143C241.352 121.686 241.982 121.457 242.787 121.457C243.561 121.457 244.182 121.668 244.65 122.09C245.107 122.523 245.336 123.068 245.336 123.725C245.336 124.158 245.227 124.555 245.008 124.914C244.785 125.273 244.377 125.801 243.783 126.496L241.615 129.016V129.062H245.465V130H240.221ZM247.053 130V129.209L249.924 125.857C250.35 125.354 250.59 125.066 250.645 124.996C250.77 124.836 250.881 124.645 250.979 124.422C251.072 124.219 251.119 123.998 251.119 123.76C251.119 123.334 250.992 122.994 250.738 122.74C250.488 122.49 250.115 122.365 249.619 122.365C249.127 122.365 248.744 122.502 248.471 122.775C248.189 123.057 248.049 123.449 248.049 123.953H247.029C247.029 123.211 247.262 122.607 247.727 122.143C248.184 121.686 248.814 121.457 249.619 121.457C250.393 121.457 251.014 121.668 251.482 122.09C251.939 122.523 252.168 123.068 252.168 123.725C252.168 124.158 252.059 124.555 251.84 124.914C251.617 125.273 251.209 125.801 250.615 126.496L248.447 129.016V129.062H252.297V130H247.053Z" fill="#78797A"/>
+              <path d="M311.807 121.598L314.9 129.883V130H313.787L312.996 127.803H309.322L308.531 130H307.436V129.883L310.523 121.598H311.807ZM309.656 126.865H312.656L311.18 122.764H311.133L309.656 126.865ZM316.219 132.748V123.865H317.098L317.227 124.721H317.279C317.666 124.08 318.281 123.76 319.125 123.76C319.934 123.76 320.57 124.039 321.035 124.598C321.484 125.148 321.715 125.93 321.727 126.941C321.715 127.887 321.488 128.65 321.047 129.232C320.605 129.814 319.965 130.105 319.125 130.105C318.281 130.105 317.666 129.787 317.279 129.15H317.227V132.748H316.219ZM318.955 129.209C319.557 129.209 320.002 128.996 320.291 128.57C320.568 128.145 320.707 127.602 320.707 126.941C320.707 126.27 320.568 125.721 320.291 125.295C320.006 124.873 319.561 124.662 318.955 124.662C318.381 124.662 317.945 124.877 317.648 125.307C317.352 125.736 317.203 126.281 317.203 126.941C317.203 127.602 317.352 128.141 317.648 128.559C317.945 128.992 318.381 129.209 318.955 129.209ZM323.402 130V123.865H324.281L324.363 124.902H324.41C324.543 124.559 324.752 124.285 325.037 124.082C325.322 123.891 325.654 123.795 326.033 123.795H326.584V124.768H326.104C324.975 124.768 324.41 125.52 324.41 127.023V130H323.402Z" fill="#78797A"/>
+            </svg>
+          </div>
+        </section>
+        <!-- info supply end -->
+
+        <!-- info burn -->
+        <section class="information__burn">
+          <h2 class="information__wrapper-title">Latest Burn Transactions</h2>
+          <div class="swiper information__burn-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="information__burn-header">
+                  <li class="information__burn-col1">Time</li>
+                  <li class="information__burn-col2">From</li>
+                  <li class="information__burn-col3">To</li>
+                  <li class="information__burn-col4">$paw</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/04 01:19:47 PM</li>
+                  <li class="information__burn-col2">0x0b1 ... 8cdfa</li>
+                  <li class="information__burn-col3">0xD ... EaD</li>
+                  <li class="information__burn-col4">1,000,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/04 11:43:59 AM</li>
+                  <li class="information__burn-col2">0xea1 ... 59e19</li>
+                  <li class="information__burn-col3">tRn ... 2gx</li>
+                  <li class="information__burn-col4">10,000,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/04 05:17:50 PM</li>
+                  <li class="information__burn-col2">0xB76 ... fAC28</li>
+                  <li class="information__burn-col3">3Ks ... MMf</li>
+                  <li class="information__burn-col4">800,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/02 04:09:47 AM</li>
+                  <li class="information__burn-col2">0xB76 ... fAC28</li>
+                  <li class="information__burn-col3">062 ... fhV</li>
+                  <li class="information__burn-col4">400,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/01 02:42:35 AM</li>
+                  <li class="information__burn-col2">0x393 ... d823a</li>
+                  <li class="information__burn-col3">0xD ... EaD</li>
+                  <li class="information__burn-col4">265,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/01 01:19:47 PM</li>
+                  <li class="information__burn-col2">0xs07 ... G1eef</li>
+                  <li class="information__burn-col3">2fh ... sHn</li>
+                  <li class="information__burn-col4">287,651,613.16499</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/04 01:19:47 PM</li>
+                  <li class="information__burn-col2">0x0b1 ... 8cdfa</li>
+                  <li class="information__burn-col3">0xD ... EaD</li>
+                  <li class="information__burn-col4">1,000,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/04 11:43:59 AM</li>
+                  <li class="information__burn-col2">0xea1 ... 59e19</li>
+                  <li class="information__burn-col3">tRn ... 2gx</li>
+                  <li class="information__burn-col4">10,000,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/04 05:17:50 PM</li>
+                  <li class="information__burn-col2">0xB76 ... fAC28</li>
+                  <li class="information__burn-col3">3Ks ... MMf</li>
+                  <li class="information__burn-col4">800,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/02 04:09:47 AM</li>
+                  <li class="information__burn-col2">0xB76 ... fAC28</li>
+                  <li class="information__burn-col3">062 ... fhV</li>
+                  <li class="information__burn-col4">400,000,000</li>
+                </ul>
+                <ul class="information__burn-row">
+                  <li class="information__burn-col1">2023/03/01 02:42:35 AM</li>
+                  <li class="information__burn-col2">0x393 ... d823a</li>
+                  <li class="information__burn-col3">0xD ... EaD</li>
+                  <li class="information__burn-col4">265,000,000</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- info burn end -->
+      </div>
+      <!-- info wrapper end -->
+    </main>
+
+    <!-- page footer -->
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="" class="page-footer__logo">
+          <img src="img/logo.svg">
+        </a>
+        <div class="page-footer__buttons">
+          <button class="page-footer__button" disabled>
+            <img src="img/logo-min.svg">
+            0.00000007898
+          </button>
+          <button class="page-footer__button" disabled>
+            <span>TVL</span>
+            $75.00
+          </button>
+        </div>
+        <div class="page-footer__links">
+          <nav class="page-footer__nav">
+            <a href="">Home</a>
+            <a href="">How to buy</a>
+            <a href="">Chart</a>
+            <a href="">Stake</a>
+          </nav>
+          <nav class="page-footer__nav">
+            <a href="">Twitter</a>
+            <a href="">Telegram</a>
+            <a href="">Medium</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- page footer end -->
+  </div>
+  <!-- modal window -->
+  <div class="modal-window">
+    <div class="modal-window__burn">
+      <p class="modal-window__burn-warning">Risk warning!</p>
+      <div class="modal-window__wrapper modal-window__wrapper--burn">
+        <button class="modal-window__close" type="button"></button>
+        <img src="img/logo.svg" class="modal-window__logo">
+        <h4 class="modal-window__title">Burn PAW tokens</h4>
+        <form class="burn-form">
+          <p class="burn-form__input-wrapper">
+            <label for="burn-amount">Enter Burn Amount</label>
+            <input type="text" name="" id="burn-amount" placeholder="$PAW amount">
+          </p>
+          <p class="burn-form__text">The token that are going to be burned, cannot be reversed. Proceed if you are fine with taking the risk.</p>
+          <hr>
+          <p class="burn-form__text">Confirm you want to permanently burn PAW tokens by entering <span>PAWBURN</span> below.</p>
+          <p class="burn-form__input-wrapper">
+            <label for="confirm-burn">Confirm operation</label>
+            <input type="text" name="" id="confirm-burn" placeholder="Enter PAWBURN">
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal window end -->
+  <script src="js/header-menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    if (window.matchMedia("(max-width: 1199px)").matches) {
+      const swiper = new Swiper(".information__burn-swiper", {
+        slidesPerView: "auto",
+        freeMode: true,
+      });
+    }
+
+    const burnButton = document.querySelector('.burn-button');
+    const modalWindow = document.querySelector('.modal-window');
+    const modalClose = document.querySelector('.modal-window__close');
+
+    burnButton.addEventListener('click', () => {
+      modalWindow.classList.add('active');
+    });
+
+    modalClose.addEventListener('click', () => {
+      modalWindow.classList.remove('active');
+    });
+ </script>
+</body>
+</html>
