@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dapp.css">
+  <title>Pawswap</title>
+</head>
+<body>
+  <div class="app--swap">
+    <!-- page header -->
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a href="" class="page-header__logo">
+          <img src="img/logo.svg" alt="Pawswap logo">
+        </a>
+        <nav class="page-header__nav">
+          <ul class="page-header__nav-list">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="" class="active">Swap</a>
+            </li>
+            <li>
+              <a href="">Approvals</a>
+            </li>
+            <li>
+              <a href="">Burn</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__btns">
+          <button type="menu" class="page-header__user-button">
+            0xb62 ... f38dM
+            <img src="img/header-user.png" alt="user avatar">
+          </button>
+          <div class="page-header__user">
+            <span class="page-header__user-wallet">Connected with Metamask</span>
+            <span class="page-header__user-address">
+              <img src="img/header-user.png" alt="">
+              0xb62 ... f38dM
+            </span>
+            <div class="page-header__user-actions">
+              <button type="button" class="page-header__copy-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.3332 10.75V14.25C13.3332 17.1667 12.1665 18.3333 9.24984 18.3333H5.74984C2.83317 18.3333 1.6665 17.1667 1.6665 14.25V10.75C1.6665 7.83332 2.83317 6.66666 5.74984 6.66666H9.24984C12.1665 6.66666 13.3332 7.83332 13.3332 10.75Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M18.3332 5.74999V9.24999C18.3332 12.1667 17.1665 13.3333 14.2498 13.3333H13.3332V10.75C13.3332 7.83332 12.1665 6.66666 9.24984 6.66666H6.6665V5.74999C6.6665 2.83332 7.83317 1.66666 10.7498 1.66666H14.2498C17.1665 1.66666 18.3332 2.83332 18.3332 5.74999Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Copy address
+                <span class="copied-tip">Copied</span>
+              </button>
+              <button type="button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.4" d="M6.66667 8.33333L5 9.99999L6.66667 11.6667" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M13.3335 8.33333L15.0002 9.99999L13.3335 11.6667" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 10C18.3332 5.39763 14.6022 1.66667 9.99984 1.66667C5.39746 1.66667 1.6665 5.39763 1.6665 10C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.4" d="M10.8332 8.05832L9.1665 11.9417" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                View on Explorer
+              </button>
+              <button type="button" class="page-header__change-wallet">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3332 9.16667V7.5C18.3332 3.33334 16.6665 1.66667 12.4998 1.66667H7.49984C3.33317 1.66667 1.6665 3.33334 1.6665 7.5V12.5C1.6665 16.6667 3.33317 18.3333 7.49984 18.3333H8.33317" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g opacity="0.4">
+                  <path d="M1.69092 7.08333H18.3326" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.69092 12.9167H9.99923" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.09131 18.3248V1.6748" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.9248 9.99145V1.6748" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <path d="M15.6083 12.2251L12.15 15.6833C12.0167 15.8166 11.8917 16.075 11.8583 16.2584L11.6667 17.5833C11.6 18.0583 11.9334 18.4 12.4084 18.325L13.7333 18.1334C13.9167 18.1084 14.175 17.9751 14.3083 17.8417L17.7667 14.3834C18.3584 13.7917 18.6417 13.0917 17.7667 12.2167C16.9 11.3501 16.2083 11.6251 15.6083 12.2251Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.1167 12.7167C15.4084 13.7667 16.2333 14.5833 17.2833 14.8833" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Change wallet
+              </button>
+            </div>
+          </div>
+          <button type="button" class="page-header__connect">Connect wallet</button>
+        </div>
+        <button type="menu" class="page-header__menu-btn"></button>
+      </div>
+    </header>
+    <!-- page header end -->
+
+    <!-- swap -->
+    <main class="swap">
+      <h1 class="swap__title">Swap now</h1>
+      <p class="swap__balance">
+        <img src="img/logo-min.svg" />
+        $0.000000072314
+      </p>
+      <form class="swap__form">
+        <header class="swap__form-header">
+          <h2 class="swap__form-header-title">Swap</h2>
+          <div class="swap__form-header-actions">
+            <button type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12C2 6.48 6.44 2 12 2C18.67 2 22 7.56 22 7.56M22 7.56V2.56M22 7.56H17.56" stroke="#111315" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path opacity="0.4" d="M21.89 12C21.89 17.52 17.41 22 11.89 22C6.37 22 3 16.44 3 16.44M3 16.44H7.52M3 16.44V21.44" stroke="#111315" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.34" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#111315" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z" stroke="#111315" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div class="swap__form-coin">
+          <p class="swap__form-coin-wrapper">
+            <input type="text" placeholder="0.0">
+            <button type="button" class="swap__form-coin-select swap__form-coin-select--selected">
+              <img src="img/coins/xrp.png" />
+              XRP
+            </button>
+          </p>
+          <p class="swap__form-coin-wrapper">
+            <span class="swap__form-coin-count">$508,732.00</span>
+            <span class="swap__form-coin-balance">Balance: <b>100,000.0</b></span>
+          </p>
+          <i class="swap__form-coin-change"></i>
+        </div>
+        <div class="swap__form-coin">
+          <p class="swap__form-coin-wrapper">
+            <input type="text" placeholder="0.0">
+            <button type="button" class="swap__form-coin-select">Select coin</button>
+          </p>
+          <p class="swap__form-coin-wrapper">
+            <span class="swap__form-coin-count">0</span>
+          </p>
+        </div>
+        <ul class="swap__form-gas">
+          <!-- item -->
+          <li class="swap__form-gas-item swap__form-gas-item--big swap__form-gas-item--red">
+            <span class="swap__form-gas-item-via">Via 1inch</span>
+            <b class="swap__form-gas-item-numbers">781,196.4533</b>
+            <span class="swap__form-gas-item-text">
+              Est. gas fee 0.03559 ETH = $55.69
+              <button type="button" class="swap__form-gas-item-info-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.99998 14.6667C11.6666 14.6667 14.6666 11.6667 14.6666 8C14.6666 4.33334 11.6666 1.33334 7.99998 1.33334C4.33331 1.33334 1.33331 4.33334 1.33331 8C1.33331 11.6667 4.33331 14.6667 7.99998 14.6667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.34" d="M8 5.33334V8.66667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.34" d="M7.99634 10.6667H8.00233" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </span>
+          </li>
+          <!-- item end -->
+
+          <!-- item -->
+          <li class="swap__form-gas-item">
+            <b class="swap__form-gas-item-numbers">780,900.1376</b>
+            <span class="swap__form-gas-item-text">
+              Est. gas fee = $12.78
+              <button type="button" class="swap__form-gas-item-info-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.99998 14.6667C11.6666 14.6667 14.6666 11.6667 14.6666 8C14.6666 4.33333 11.6666 1.33333 7.99998 1.33333C4.33331 1.33333 1.33331 4.33333 1.33331 8C1.33331 11.6667 4.33331 14.6667 7.99998 14.6667Z" stroke="#898989" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.34" d="M8 5.33333V8.66667" stroke="#898989" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.34" d="M7.99634 10.6667H8.00233" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </span>
+          </li>
+          <!-- item end -->
+
+          <!-- item -->
+          <li class="swap__form-gas-item">
+            <b class="swap__form-gas-item-numbers">780,846.43602</b>
+            <span class="swap__form-gas-item-text">
+              Est. gas fee = $12.76
+              <button type="button" class="swap__form-gas-item-info-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.99998 14.6667C11.6666 14.6667 14.6666 11.6667 14.6666 8C14.6666 4.33333 11.6666 1.33333 7.99998 1.33333C4.33331 1.33333 1.33331 4.33333 1.33331 8C1.33331 11.6667 4.33331 14.6667 7.99998 14.6667Z" stroke="#898989" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.34" d="M8 5.33333V8.66667" stroke="#898989" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path opacity="0.34" d="M7.99634 10.6667H8.00233" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </span>
+          </li>
+          <!-- item end -->
+        </ul>
+        <button type="button" class="swap__form-providers-btn">Show more providers</button>
+        <button class="swap__form-black-button" type="button">Connect wallet</button>
+      </form>
+
+      <!-- transaction details -->
+      <div class="transaction-details">
+        <button type="menu" class="transaction-details__button">Transaction details</button>
+        <ul class="transaction-details__list">
+          <li class="transaction-details__item">
+            <span class="info">Minimum received</span>
+            <b>0.0000016787 ETH</b>
+          </li>
+          <li class="transaction-details__item">
+            <span class="info">Price impact</span>
+            <b class="red">99.97%</b>
+          </li>
+          <li class="transaction-details__item">
+            <span class="info">Slippage</span>
+            <b>1%</b>
+          </li>
+          <li class="transaction-details__item">
+            <span>Rate</span>
+            <b>1 PAW = 0.000000003391327806 ETH</b>
+          </li>
+          <li class="transaction-details__item">
+            <span>Route</span>
+            <b>
+              PAW
+              <i class="arrow"></i>
+              ETH
+            </b>
+          </li>
+        </ul>
+      </div>
+      <!-- transaction details end -->
+    </main>
+    <!-- swap end -->
+
+    <!-- page footer -->
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="" class="page-footer__logo">
+          <img src="img/logo.svg">
+        </a>
+        <div class="page-footer__buttons">
+          <button class="page-footer__button" disabled>
+            <img src="img/logo-min.svg">
+            0.00000007898
+          </button>
+          <button class="page-footer__button" disabled>
+            <span>TVL</span>
+            $75.00
+          </button>
+        </div>
+        <div class="page-footer__links">
+          <nav class="page-footer__nav">
+            <a href="">Home</a>
+            <a href="">How to buy</a>
+            <a href="">Chart</a>
+            <a href="">Stake</a>
+          </nav>
+          <nav class="page-footer__nav">
+            <a href="">Twitter</a>
+            <a href="">Telegram</a>
+            <a href="">Medium</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- page footer end -->
+  </div>
+
+  <!-- modal window -->
+  <div class="modal-window modal-window--select-token">
+    <div class="modal-window__wrapper select-token">
+      <button class="modal-window__close" type="button"></button>
+      <img src="img/logo.svg" class="modal-window__logo">
+      <h4 class="modal-window__title">Token list</h4>
+      <input type="text" class="select-token__search" placeholder="Coin name or address">
+      <!-- related -->
+      <ul class="select-token__related">
+        <li class="select-token__related-item">
+          <img src="img/coins/fiat.png" />
+          Fiat
+        </li>
+        <li class="select-token__related-item">
+          <img src="img/coins/eth.png" />
+          Ethereum
+        </li>
+        <li class="select-token__related-item">
+          <img src="img/coins/bnb.png" />
+          BNB Chain
+        </li>
+        <li class="select-token__related-item">
+          <img src="img/coins/polygon.png" />
+          Polygon
+        </li>
+        <li class="select-token__related-item">
+          <img src="img/coins/avalanche.png" />
+          Avalanche
+        </li>
+        <li class="select-token__related-item">
+          <img src="img/coins/fantom.png" />
+          Fantom
+        </li>
+        <li class="select-token__related-item select-token__related-item--more">+32</li>
+      </ul>
+      <!-- related end -->
+
+      <!-- results -->
+      <ul class="select-token__results">
+        <li class="select-token__result-item">
+          <img src="img/coins/weth.png" />
+          <p>
+            <b>weth</b>
+            <span>Wrapped Ether</span>
+          </p>
+          <button class="select-token__result-favorite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.52193 2.3022C7.67559 1.99091 7.75242 1.83526 7.85672 1.78553C7.94746 1.74227 8.05289 1.74227 8.14363 1.78553C8.24793 1.83526 8.32476 1.99091 8.47842 2.3022L9.9362 5.25551C9.98157 5.34741 10.0042 5.39336 10.0374 5.42904C10.0667 5.46063 10.1019 5.48622 10.141 5.5044C10.1852 5.52494 10.2359 5.53235 10.3373 5.54717L13.5982 6.02379C13.9415 6.07398 14.1132 6.09908 14.1927 6.18295C14.2618 6.25592 14.2943 6.35619 14.2812 6.45584C14.266 6.57038 14.1417 6.69144 13.8931 6.93358L11.5345 9.23094C11.4609 9.30255 11.4242 9.33836 11.4004 9.38096C11.3794 9.41869 11.366 9.46013 11.3608 9.50299C11.3549 9.5514 11.3636 9.60199 11.3809 9.70315L11.9375 12.9481C11.9962 13.2903 12.0255 13.4614 11.9704 13.563C11.9224 13.6513 11.8371 13.7133 11.7382 13.7316C11.6246 13.7527 11.4709 13.6719 11.1636 13.5103L8.24841 11.9772C8.15758 11.9294 8.11217 11.9056 8.06432 11.8962C8.02196 11.8879 7.97839 11.8879 7.93602 11.8962C7.88818 11.9056 7.84276 11.9294 7.75193 11.9772L4.83678 13.5103C4.52944 13.6719 4.37577 13.7527 4.26214 13.7316C4.16328 13.7133 4.07798 13.6513 4.02999 13.563C3.97483 13.4614 4.00418 13.2903 4.06288 12.9481L4.61942 9.70315C4.63677 9.60199 4.64545 9.5514 4.63958 9.50299C4.63438 9.46013 4.6209 9.41869 4.5999 9.38096C4.57618 9.33836 4.53941 9.30255 4.46589 9.23094L2.1072 6.93358C1.8586 6.69144 1.73431 6.57038 1.71918 6.45584C1.70602 6.35619 1.73853 6.25592 1.80766 6.18295C1.88712 6.09908 2.05881 6.07398 2.40219 6.02379L5.66304 5.54717C5.76445 5.53235 5.81515 5.52494 5.85931 5.5044C5.89841 5.48622 5.9336 5.46063 5.96295 5.42904C5.9961 5.39336 6.01878 5.34741 6.06415 5.25551L7.52193 2.3022Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Favorite
+          </button>
+        </li>
+        <li class="select-token__result-item">
+          <img src="img/coins/usdt.png" />
+          <p>
+            <b>usdt</b>
+            <span>Tether USD</span>
+          </p>
+          <button class="select-token__result-favorite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.52193 2.3022C7.67559 1.99091 7.75242 1.83526 7.85672 1.78553C7.94746 1.74227 8.05289 1.74227 8.14363 1.78553C8.24793 1.83526 8.32476 1.99091 8.47842 2.3022L9.9362 5.25551C9.98157 5.34741 10.0042 5.39336 10.0374 5.42904C10.0667 5.46063 10.1019 5.48622 10.141 5.5044C10.1852 5.52494 10.2359 5.53235 10.3373 5.54717L13.5982 6.02379C13.9415 6.07398 14.1132 6.09908 14.1927 6.18295C14.2618 6.25592 14.2943 6.35619 14.2812 6.45584C14.266 6.57038 14.1417 6.69144 13.8931 6.93358L11.5345 9.23094C11.4609 9.30255 11.4242 9.33836 11.4004 9.38096C11.3794 9.41869 11.366 9.46013 11.3608 9.50299C11.3549 9.5514 11.3636 9.60199 11.3809 9.70315L11.9375 12.9481C11.9962 13.2903 12.0255 13.4614 11.9704 13.563C11.9224 13.6513 11.8371 13.7133 11.7382 13.7316C11.6246 13.7527 11.4709 13.6719 11.1636 13.5103L8.24841 11.9772C8.15758 11.9294 8.11217 11.9056 8.06432 11.8962C8.02196 11.8879 7.97839 11.8879 7.93602 11.8962C7.88818 11.9056 7.84276 11.9294 7.75193 11.9772L4.83678 13.5103C4.52944 13.6719 4.37577 13.7527 4.26214 13.7316C4.16328 13.7133 4.07798 13.6513 4.02999 13.563C3.97483 13.4614 4.00418 13.2903 4.06288 12.9481L4.61942 9.70315C4.63677 9.60199 4.64545 9.5514 4.63958 9.50299C4.63438 9.46013 4.6209 9.41869 4.5999 9.38096C4.57618 9.33836 4.53941 9.30255 4.46589 9.23094L2.1072 6.93358C1.8586 6.69144 1.73431 6.57038 1.71918 6.45584C1.70602 6.35619 1.73853 6.25592 1.80766 6.18295C1.88712 6.09908 2.05881 6.07398 2.40219 6.02379L5.66304 5.54717C5.76445 5.53235 5.81515 5.52494 5.85931 5.5044C5.89841 5.48622 5.9336 5.46063 5.96295 5.42904C5.9961 5.39336 6.01878 5.34741 6.06415 5.25551L7.52193 2.3022Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Favorite
+          </button>
+        </li>
+        <li class="select-token__result-item">
+          <img src="img/coins/usdc.png" />
+          <p>
+            <b>usdc</b>
+            <span>USD Coin</span>
+          </p>
+          <button class="select-token__result-favorite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.52193 2.3022C7.67559 1.99091 7.75242 1.83526 7.85672 1.78553C7.94746 1.74227 8.05289 1.74227 8.14363 1.78553C8.24793 1.83526 8.32476 1.99091 8.47842 2.3022L9.9362 5.25551C9.98157 5.34741 10.0042 5.39336 10.0374 5.42904C10.0667 5.46063 10.1019 5.48622 10.141 5.5044C10.1852 5.52494 10.2359 5.53235 10.3373 5.54717L13.5982 6.02379C13.9415 6.07398 14.1132 6.09908 14.1927 6.18295C14.2618 6.25592 14.2943 6.35619 14.2812 6.45584C14.266 6.57038 14.1417 6.69144 13.8931 6.93358L11.5345 9.23094C11.4609 9.30255 11.4242 9.33836 11.4004 9.38096C11.3794 9.41869 11.366 9.46013 11.3608 9.50299C11.3549 9.5514 11.3636 9.60199 11.3809 9.70315L11.9375 12.9481C11.9962 13.2903 12.0255 13.4614 11.9704 13.563C11.9224 13.6513 11.8371 13.7133 11.7382 13.7316C11.6246 13.7527 11.4709 13.6719 11.1636 13.5103L8.24841 11.9772C8.15758 11.9294 8.11217 11.9056 8.06432 11.8962C8.02196 11.8879 7.97839 11.8879 7.93602 11.8962C7.88818 11.9056 7.84276 11.9294 7.75193 11.9772L4.83678 13.5103C4.52944 13.6719 4.37577 13.7527 4.26214 13.7316C4.16328 13.7133 4.07798 13.6513 4.02999 13.563C3.97483 13.4614 4.00418 13.2903 4.06288 12.9481L4.61942 9.70315C4.63677 9.60199 4.64545 9.5514 4.63958 9.50299C4.63438 9.46013 4.6209 9.41869 4.5999 9.38096C4.57618 9.33836 4.53941 9.30255 4.46589 9.23094L2.1072 6.93358C1.8586 6.69144 1.73431 6.57038 1.71918 6.45584C1.70602 6.35619 1.73853 6.25592 1.80766 6.18295C1.88712 6.09908 2.05881 6.07398 2.40219 6.02379L5.66304 5.54717C5.76445 5.53235 5.81515 5.52494 5.85931 5.5044C5.89841 5.48622 5.9336 5.46063 5.96295 5.42904C5.9961 5.39336 6.01878 5.34741 6.06415 5.25551L7.52193 2.3022Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Favorite
+          </button>
+        </li>
+        <li class="select-token__result-item">
+          <img src="img/coins/uni.png" />
+          <p>
+            <b>uni</b>
+            <span>Uniswap</span>
+          </p>
+          <button class="select-token__result-favorite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.52193 2.3022C7.67559 1.99091 7.75242 1.83526 7.85672 1.78553C7.94746 1.74227 8.05289 1.74227 8.14363 1.78553C8.24793 1.83526 8.32476 1.99091 8.47842 2.3022L9.9362 5.25551C9.98157 5.34741 10.0042 5.39336 10.0374 5.42904C10.0667 5.46063 10.1019 5.48622 10.141 5.5044C10.1852 5.52494 10.2359 5.53235 10.3373 5.54717L13.5982 6.02379C13.9415 6.07398 14.1132 6.09908 14.1927 6.18295C14.2618 6.25592 14.2943 6.35619 14.2812 6.45584C14.266 6.57038 14.1417 6.69144 13.8931 6.93358L11.5345 9.23094C11.4609 9.30255 11.4242 9.33836 11.4004 9.38096C11.3794 9.41869 11.366 9.46013 11.3608 9.50299C11.3549 9.5514 11.3636 9.60199 11.3809 9.70315L11.9375 12.9481C11.9962 13.2903 12.0255 13.4614 11.9704 13.563C11.9224 13.6513 11.8371 13.7133 11.7382 13.7316C11.6246 13.7527 11.4709 13.6719 11.1636 13.5103L8.24841 11.9772C8.15758 11.9294 8.11217 11.9056 8.06432 11.8962C8.02196 11.8879 7.97839 11.8879 7.93602 11.8962C7.88818 11.9056 7.84276 11.9294 7.75193 11.9772L4.83678 13.5103C4.52944 13.6719 4.37577 13.7527 4.26214 13.7316C4.16328 13.7133 4.07798 13.6513 4.02999 13.563C3.97483 13.4614 4.00418 13.2903 4.06288 12.9481L4.61942 9.70315C4.63677 9.60199 4.64545 9.5514 4.63958 9.50299C4.63438 9.46013 4.6209 9.41869 4.5999 9.38096C4.57618 9.33836 4.53941 9.30255 4.46589 9.23094L2.1072 6.93358C1.8586 6.69144 1.73431 6.57038 1.71918 6.45584C1.70602 6.35619 1.73853 6.25592 1.80766 6.18295C1.88712 6.09908 2.05881 6.07398 2.40219 6.02379L5.66304 5.54717C5.76445 5.53235 5.81515 5.52494 5.85931 5.5044C5.89841 5.48622 5.9336 5.46063 5.96295 5.42904C5.9961 5.39336 6.01878 5.34741 6.06415 5.25551L7.52193 2.3022Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Favorite
+          </button>
+        </li>
+        <li class="select-token__result-item">
+          <img src="img/coins/dai.png" />
+          <p>
+            <b>dai</b>
+            <span>Dai Stablecoin</span>
+          </p>
+          <button class="select-token__result-favorite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.52193 2.3022C7.67559 1.99091 7.75242 1.83526 7.85672 1.78553C7.94746 1.74227 8.05289 1.74227 8.14363 1.78553C8.24793 1.83526 8.32476 1.99091 8.47842 2.3022L9.9362 5.25551C9.98157 5.34741 10.0042 5.39336 10.0374 5.42904C10.0667 5.46063 10.1019 5.48622 10.141 5.5044C10.1852 5.52494 10.2359 5.53235 10.3373 5.54717L13.5982 6.02379C13.9415 6.07398 14.1132 6.09908 14.1927 6.18295C14.2618 6.25592 14.2943 6.35619 14.2812 6.45584C14.266 6.57038 14.1417 6.69144 13.8931 6.93358L11.5345 9.23094C11.4609 9.30255 11.4242 9.33836 11.4004 9.38096C11.3794 9.41869 11.366 9.46013 11.3608 9.50299C11.3549 9.5514 11.3636 9.60199 11.3809 9.70315L11.9375 12.9481C11.9962 13.2903 12.0255 13.4614 11.9704 13.563C11.9224 13.6513 11.8371 13.7133 11.7382 13.7316C11.6246 13.7527 11.4709 13.6719 11.1636 13.5103L8.24841 11.9772C8.15758 11.9294 8.11217 11.9056 8.06432 11.8962C8.02196 11.8879 7.97839 11.8879 7.93602 11.8962C7.88818 11.9056 7.84276 11.9294 7.75193 11.9772L4.83678 13.5103C4.52944 13.6719 4.37577 13.7527 4.26214 13.7316C4.16328 13.7133 4.07798 13.6513 4.02999 13.563C3.97483 13.4614 4.00418 13.2903 4.06288 12.9481L4.61942 9.70315C4.63677 9.60199 4.64545 9.5514 4.63958 9.50299C4.63438 9.46013 4.6209 9.41869 4.5999 9.38096C4.57618 9.33836 4.53941 9.30255 4.46589 9.23094L2.1072 6.93358C1.8586 6.69144 1.73431 6.57038 1.71918 6.45584C1.70602 6.35619 1.73853 6.25592 1.80766 6.18295C1.88712 6.09908 2.05881 6.07398 2.40219 6.02379L5.66304 5.54717C5.76445 5.53235 5.81515 5.52494 5.85931 5.5044C5.89841 5.48622 5.9336 5.46063 5.96295 5.42904C5.9961 5.39336 6.01878 5.34741 6.06415 5.25551L7.52193 2.3022Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Favorite
+          </button>
+        </li>
+        <li class="select-token__result-item">
+          <img src="img/coins/link.png" />
+          <p>
+            <b>link</b>
+            <span>Chainlink</span>
+          </p>
+          <button class="select-token__result-favorite">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.52193 2.3022C7.67559 1.99091 7.75242 1.83526 7.85672 1.78553C7.94746 1.74227 8.05289 1.74227 8.14363 1.78553C8.24793 1.83526 8.32476 1.99091 8.47842 2.3022L9.9362 5.25551C9.98157 5.34741 10.0042 5.39336 10.0374 5.42904C10.0667 5.46063 10.1019 5.48622 10.141 5.5044C10.1852 5.52494 10.2359 5.53235 10.3373 5.54717L13.5982 6.02379C13.9415 6.07398 14.1132 6.09908 14.1927 6.18295C14.2618 6.25592 14.2943 6.35619 14.2812 6.45584C14.266 6.57038 14.1417 6.69144 13.8931 6.93358L11.5345 9.23094C11.4609 9.30255 11.4242 9.33836 11.4004 9.38096C11.3794 9.41869 11.366 9.46013 11.3608 9.50299C11.3549 9.5514 11.3636 9.60199 11.3809 9.70315L11.9375 12.9481C11.9962 13.2903 12.0255 13.4614 11.9704 13.563C11.9224 13.6513 11.8371 13.7133 11.7382 13.7316C11.6246 13.7527 11.4709 13.6719 11.1636 13.5103L8.24841 11.9772C8.15758 11.9294 8.11217 11.9056 8.06432 11.8962C8.02196 11.8879 7.97839 11.8879 7.93602 11.8962C7.88818 11.9056 7.84276 11.9294 7.75193 11.9772L4.83678 13.5103C4.52944 13.6719 4.37577 13.7527 4.26214 13.7316C4.16328 13.7133 4.07798 13.6513 4.02999 13.563C3.97483 13.4614 4.00418 13.2903 4.06288 12.9481L4.61942 9.70315C4.63677 9.60199 4.64545 9.5514 4.63958 9.50299C4.63438 9.46013 4.6209 9.41869 4.5999 9.38096C4.57618 9.33836 4.53941 9.30255 4.46589 9.23094L2.1072 6.93358C1.8586 6.69144 1.73431 6.57038 1.71918 6.45584C1.70602 6.35619 1.73853 6.25592 1.80766 6.18295C1.88712 6.09908 2.05881 6.07398 2.40219 6.02379L5.66304 5.54717C5.76445 5.53235 5.81515 5.52494 5.85931 5.5044C5.89841 5.48622 5.9336 5.46063 5.96295 5.42904C5.9961 5.39336 6.01878 5.34741 6.06415 5.25551L7.52193 2.3022Z" stroke="#131313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Favorite
+          </button>
+        </li>
+      </ul>
+      <!-- results end -->
+    </div>
+  </div>
+  <!-- modal window end -->
+
+  <script src="js/dapp.js"></script>
+</body>
+</html>
